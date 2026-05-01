@@ -1,0 +1,1366 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cryptographic Vulnerability Scan Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f0f0f0; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 20px 0; }
+        .summary-card { padding: 20px; border-radius: 8px; text-align: center; color: white; }
+        .critical { background: #dc3545; }
+        .high { background: #fd7e14; }
+        .medium { background: #ffc107; color: black; }
+        .low { background: #28a745; }
+        .finding { background: white; border-left: 4px solid #007bff; padding: 15px; margin: 10px 0; border-radius: 4px; }
+        .vulnerability { border-left-color: #dc3545; }
+        .recommendation { background: #d4edda; padding: 10px; border-radius: 4px; margin-top: 10px; }
+        .compliance { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; }
+        .pass { color: #28a745; }
+        .fail { color: #dc3545; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f8f9fa; }
+        .file-path { color: #6c757d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Cryptographic Vulnerability Scan Report</h1>
+            <p>Scan Date: 2026-05-01 23:58:48</p>
+            <p>Target: /home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE</p>
+            <p>Files Scanned: 53</p>
+        </div>
+        
+        <div class="summary">
+            <div class="summary-card critical">
+                <h2>0</h2>
+                <p>Critical</p>
+            </div>
+            <div class="summary-card high">
+                <h2>0</h2>
+                <p>High</p>
+            </div>
+            <div class="summary-card medium">
+                <h2>0</h2>
+                <p>Medium</p>
+            </div>
+            <div class="summary-card low">
+                <h2>0</h2>
+                <p>Low</p>
+            </div>
+        </div>
+        
+        <h2>📊 Detailed Findings (146 total)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Severity</th>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Type</th>
+                    <th>Details</th>
+                    <th>Recommendation</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/pom.xml</td>
+                    <td>9</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest512.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest512.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest512.java</td>
+                    <td>5</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest512.java</td>
+                    <td>6</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest1024.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest1024.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest1024.java</td>
+                    <td>5</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest1024.java</td>
+                    <td>6</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest768.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest768.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest768.java</td>
+                    <td>5</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest768.java</td>
+                    <td>6</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemThreadTest.java</td>
+                    <td>10</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/test/java/com/swiftcryptollc/crypto/provider/KemTest.java</td>
+                    <td>13</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>8</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>10</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>11</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>26</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>64</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>66</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>66</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>71</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>73</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>73</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>75</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>77</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>82</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>84</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>84</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>86</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>93</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>95</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>95</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>100</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>102</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>102</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>104</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberJCE.java</td>
+                    <td>105</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber768KeyPairGenerator.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber768KeyPairGenerator.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber768KeyPairGenerator.java</td>
+                    <td>27</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber512KeyPairGenerator.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber512KeyPairGenerator.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber512KeyPairGenerator.java</td>
+                    <td>27</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>5</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>6</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>22</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>42</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>57</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>74</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>88</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>91</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>171</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>180</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>295</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyAgreement.java</td>
+                    <td>451</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberDecrypted.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberDecrypted.java</td>
+                    <td>94</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>23</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>48</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>63</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>96</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>101</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>173</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>177</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>290</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberCipherText.java</td>
+                    <td>295</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>22</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>49</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>64</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>98</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>103</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>175</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>179</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>295</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPublicKey.java</td>
+                    <td>300</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber1024KeyPairGenerator.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber1024KeyPairGenerator.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/Kyber1024KeyPairGenerator.java</td>
+                    <td>27</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberKeyFactory.java</td>
+                    <td>17</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberEncrypted.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberEncrypted.java</td>
+                    <td>94</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPKI.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>22</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>47</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>59</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>89</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>94</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>166</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>170</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>283</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberSecretKey.java</td>
+                    <td>288</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>3</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>55</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>70</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>103</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>184</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>188</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>312</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberPrivateKey.java</td>
+                    <td>317</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberParameterGenerator.java</td>
+                    <td>24</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/KyberParameterGenerator.java</td>
+                    <td>77</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/util/KyberKeyUtil.java</td>
+                    <td>5</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/spec/KyberPrivateKeySpec.java</td>
+                    <td>7</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/spec/KyberParameterSpec.java</td>
+                    <td>4</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/spec/KyberParameterSpec.java</td>
+                    <td>28</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/spec/KyberParameterSpec.java</td>
+                    <td>72</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/spec/KyberPublicKeySpec.java</td>
+                    <td>7</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/UnpackedPublicKey.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Indcpa.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Indcpa.java</td>
+                    <td>248</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Indcpa.java</td>
+                    <td>295</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Indcpa.java</td>
+                    <td>333</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Ntt.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/ByteOps.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/UnpackedCipherText.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/Poly.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>1</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>35</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>38</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>41</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>44</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>47</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>50</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>53</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>56</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>59</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>62</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>65</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>68</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>71</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>74</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>77</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>80</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+                <tr>
+                    <td style="color: #0099FF; font-weight: bold;">INFO</td>
+                    <td class="file-path">/home/sanaullah/Desktop/MS-Cyber-Security/Ethical-Hacking/Research-Work/practical-work/March-progress/Testing/kyberJCE/src/main/java/com/swiftcryptollc/crypto/provider/kyber/KyberParams.java</td>
+                    <td>83</td>
+                    <td>quantum_safe_algorithm</td>
+                    <td>Post-quantum cryptographic algorithm detected: kyber</td>
+                    <td class="recommendation">Review manually</td>
+                </tr>
+            
+            </tbody>
+        </table>
+        
+        <h2>📋 Compliance Check</h2>
+        
+            <div class="compliance">
+                <h3>FIPS-140: <span class="pass">✅ PASS</span></h3>
+                <p>FIPS-140 requires approved algorithms only</p>
+                <p>Issues found: 0</p>
+            </div>
+            
+            <div class="compliance">
+                <h3>PCI-DSS: <span class="pass">✅ PASS</span></h3>
+                <p>PCI-DSS requires strong cryptography for cardholder data</p>
+                <p>Issues found: 0</p>
+            </div>
+            
+            <div class="compliance">
+                <h3>OWASP: <span class="pass">✅ PASS</span></h3>
+                <p>OWASP Top 10 cryptographic requirements</p>
+                <p>Issues found: 0</p>
+            </div>
+            
+            <div class="compliance">
+                <h3>NIST-Post-Quantum: <span class="pass">✅ PASS</span></h3>
+                <p>NIST recommends migrating to post-quantum algorithms</p>
+                <p>Issues found: 0</p>
+            </div>
+            
+        
+        <h2>💡 Recommendations Summary</h2>
+        <ul>
+            <li>Replace all deprecated algorithms (MD5, SHA1, DES, RC4) with modern alternatives</li>
+            <li>Use key management systems instead of hardcoded keys</li>
+            <li>Implement proper encryption modes (avoid ECB)</li>
+            <li>Use cryptographically secure random number generators</li>
+            <li>Keep all cryptographic libraries up to date</li>
+        </ul>
+        
+        <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #6c757d;">
+            <p>Generated by Crypto Vulnerability Scanner</p>
+        </footer>
+    </div>
+</body>
+</html>
+        
