@@ -1,5 +1,5 @@
 """
-Local directory scanner
+Local directory scanner - Advanced Edition
 """
 
 from pathlib import Path
@@ -10,11 +10,12 @@ from scanner.vulnerability_checker import VulnerabilityChecker
 class LocalScanner:
     """Scans local directories for cryptographic vulnerabilities"""
     
-    def __init__(self, directory_path: str):
+    def __init__(self, directory_path: str, verbose: bool = False):
         self.directory_path = Path(directory_path)
         if not self.directory_path.exists():
             raise ValueError(f"Directory not found: {directory_path}")
         
+        self.verbose = verbose
         self.detector = CryptoDetector()
         self.vuln_checker = VulnerabilityChecker()
         
@@ -35,23 +36,12 @@ class LocalScanner:
             '.DS_Store', 'Thumbs.db', '.Spotlight-V100', '.Trashes',
             # Docker & Virtualization
             '.docker', 'docker-compose.override.yml',
-            # Package files
-            'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml',
-            'Pipfile.lock', 'poetry.lock', 'requirements.txt',
-            # Config/Environment
-            '.env.local', '.env.development', '.env.production',
             # Cache
             '.cache', '.parcel-cache', '.next', '.nuxt',
             # Test coverage
             'coverage', '.nyc_output', '.coverage',
-            # Documentation
-            'docs', 'documentation', 'wiki',
-            # Media/Assets
-            'assets', 'static', 'public/assets',
             # Logs
             'logs', '*.log',
-            # Database
-            '*.db', '*.sqlite', '*.sqlite3',
             # Temporary
             'tmp', 'temp', '.tmp',
         }
@@ -60,9 +50,8 @@ class LocalScanner:
             # Package manager files
             'package.json', 'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml',
             'requirements.txt', 'Pipfile', 'Pipfile.lock', 'poetry.lock',
-            'composer.json', 'composer.lock', 'Gemfile', 'Gemfile.lock',
             'Cargo.toml', 'Cargo.lock', 'go.mod', 'go.sum',
-            # Config files (usually)
+            # Config files
             '.gitignore', '.gitattributes', '.editorconfig',
             '.prettierrc', '.eslintrc', '.babelrc', '.browserslistrc',
             'tsconfig.json', 'jsconfig.json',
@@ -120,13 +109,19 @@ class LocalScanner:
                 findings = self.detector.detect_crypto_in_file(file_path)
                 all_findings.extend(findings)
                 
-                if findings:
+                if findings and self.verbose:
+                    print(f"  [✓] Found {len(findings)} crypto patterns in: {file_path.name}")
+                elif findings:
                     print(f"  [✓] Found crypto patterns in: {file_path.name}")
         
         print(f"\n[*] Scanned {total_files} files, skipped {skipped_files} files")
+        print(f"[*] Found {len(all_findings)} cryptographic patterns")
         
-        # Check for vulnerabilities
-        vulnerability_results = self.vuln_checker.check_findings(all_findings)
+        # Check for vulnerabilities with advanced analysis
+        print(f"[*] Analyzing vulnerabilities and checking CVEs...")
+        vulnerability_results = self.vuln_checker.analyze_findings(all_findings)
+        
+        print(f"[*] Checking compliance standards...")
         
         return {
             'target': str(self.directory_path),
@@ -142,7 +137,12 @@ class LocalScanner:
             'high': vulnerability_results['high'],
             'medium': vulnerability_results['medium'],
             'low': vulnerability_results['low'],
-            'compliance': vulnerability_results['compliance']
+            'info': vulnerability_results.get('info', 0),
+            'risk_score': vulnerability_results['risk_score'],
+            'top_threats': vulnerability_results['top_threats'],
+            'compliance': vulnerability_results['compliance'],
+            'statistics': vulnerability_results['statistics'],
+            'remediation_plan': vulnerability_results['remediation_plan']
         }
     
     def should_ignore(self, file_path: Path) -> bool:
